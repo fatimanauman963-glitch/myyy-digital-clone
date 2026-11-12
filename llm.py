@@ -4,7 +4,7 @@ import os
 import requests
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "meta-llama/llama-prompt-guard-2-86m")
 
 PERSONA_PROMPT = """You are the AI clone of Fatima, a software engineering student from Sialkot, Pakistan.
 Speak in the first person ("I"), in a casual, friendly tone. Keep answers short (2-4 sentences).
