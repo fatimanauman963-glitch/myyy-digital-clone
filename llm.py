@@ -47,7 +47,6 @@ def generate_answer(question, hits, api_key):
         "temperature": 0.2,
         "max_tokens": 300,
         "messages": [
-            {"role": "system", "content": PERSONA_PROMPT.format(context=build_context(hits))},
             {"role": "user", "content": question},
         ],
     }
